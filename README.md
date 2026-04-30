@@ -25,7 +25,6 @@ Planned features:
 
 * Win condition detection
 * Draw detection
-* Improved input handling
 
 ## What I Learned
 
