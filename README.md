@@ -24,7 +24,6 @@ Planned features:
 
 * Win condition detection
 * Draw detection
-* Move validation (prevent overwriting cells)
 * Improved input handling
 
 ## What I Learned
