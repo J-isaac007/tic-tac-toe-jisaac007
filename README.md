@@ -15,6 +15,7 @@ The project is currently a work in progress, with core gameplay implemented and 
 * Two-player turn-based system
 * Player input using coordinates (e.g., A1, B2)
 * Dynamic board updates after each move
+* Move validation(prevent overwriting cells)
 
 ## Project Status
 
