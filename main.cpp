@@ -19,67 +19,195 @@ void clearScreen() {
         system("clear");
     #endif
 }
-void playerInput(char board[3][3], std::string move, int turn) {
+void playerInput(char board[3][3], std::string move, int &turn) {
+
+    clearScreen();
     if (move.length() != 2) {
         std::cout << "Invalid move format. Please enter a move like A1, B2, etc." << '\n';
         return;
     }
     else if (turn % 2 == 0) {
         if (move == "A1") {
-            board[0][0] = 'X';
+            if (board[0][0] != ' ') {
+                clearScreen();
+                std::cout << "Invalid move. Cell already occupied. Please try again.";
+                --turn;
+                return;
+            } else {
+                board[0][0] = 'X';
+            }
         }
         else if (move == "A2") {
-            board[0][1] = 'X';
+            if (board[0][1] != ' ') {
+                clearScreen();
+                std::cout << "Invalid move. Cell already occupied. Please try again.";
+                --turn;
+                return;
+            } else {
+                board[0][1] = 'X';
+            }
         }
         else if (move == "A3") {
-            board[0][2] = 'X';
+            if (board[0][2] != ' ') {
+                clearScreen();
+                std::cout << "Invalid move. Cell already occupied. Please try again.";
+                --turn;
+                return;
+            } else {
+                board[0][2] = 'X';
+            }
         }
         else if (move == "B1") {
-            board[1][0] = 'X';
+            if (board[1][0] != ' ') {
+                clearScreen();
+                std::cout << "Invalid move. Cell already occupied. Please try again.";
+                --turn;
+                return;
+            } else {
+                board[1][0] = 'X';
+            }
         }
         else if (move == "B2") {
-            board[1][1] = 'X';
+            if (board[1][1] != ' ') {
+                clearScreen();
+                std::cout << "Invalid move. Cell already occupied. Please try again.";
+                --turn;
+                return;
+            } else {
+                board[1][1] = 'X';
+            }
         }
         else if (move == "B3") {
-            board[1][2] = 'X';
+            if (board[1][2] != ' ') {
+                clearScreen();
+                std::cout << "Invalid move. Cell already occupied. Please try again.";
+                --turn;
+                return;
+            } else {
+                board[1][2] = 'X';
+            }
         }
         else if (move == "C1") {
-            board[2][0] = 'X';
+            if (board[2][0] != ' ') {
+                clearScreen();
+                std::cout << "Invalid move. Cell already occupied. Please try again.";
+                --turn;
+                return;
+            } else {
+                board[2][0] = 'X';
+            }
         }
         else if (move == "C2") {
-            board[2][1] = 'X';
+            if (board[2][1] != ' ') {
+                clearScreen();
+                std::cout << "Invalid move. Cell already occupied. Please try again.";
+                --turn;
+                return;
+            } else {
+                board[2][1] = 'X';
+            }
         }
         else if (move == "C3") {
-            board[2][2] = 'X';
+            if (board[2][2] != ' ') {
+                clearScreen();
+                std::cout << "Invalid move. Cell already occupied. Please try again.";
+                --turn;
+                return;
+            } else {
+                board[2][2] = 'X';
+            }
         }
     }
     else {
         if (move == "A1") {
-            board[0][0] = 'O';
+            if (board[0][0] != ' ') {
+                clearScreen();
+                std::cout << "Invalid move. Cell already occupied. Please try again.";
+                --turn;
+                return;
+            } else {
+                board[0][0] = 'O';
+            }
         }
         else if (move == "A2") {
-            board[0][1] = 'O';
+            if (board[0][1] != ' ') {
+                clearScreen();
+                std::cout << "Invalid move. Cell already occupied. Please try again.";
+                --turn;     
+                return;
+            } else {
+                board[0][1] = 'O';
+            }
         }
         else if (move == "A3") {
-            board[0][2] = 'O';
+            if (board[0][2] != ' ') {
+                clearScreen();
+                std::cout << "Invalid move. Cell already occupied. Please try again.";
+                --turn;
+                return;
+            } else {
+                board[0][2] = 'O';
+            }
         }
         else if (move == "B1") {
-            board[1][0] = 'O';
+            if (board[1][0] != ' ') {
+                clearScreen();
+                std::cout << "Invalid move. Cell already occupied. Please try again.";
+                --turn;
+                return;
+            } else {
+                board[1][0] = 'O';
+            }
         }
         else if (move == "B2") {
-            board[1][1] = 'O';
+            if (board[1][1] != ' ') {
+                clearScreen();
+                std::cout << "Invalid move. Cell already occupied. Please try again.";
+                --turn;
+                return;
+            } else {
+                board[1][1] = 'O';
+            }
         }
         else if (move == "B3") {
-            board[1][2] = 'O';
+            if (board[1][2] != ' ') {
+                clearScreen();
+                std::cout << "Invalid move. Cell already occupied. Please try again.";
+                --turn;
+                return;
+            } else {
+                board[1][2] = 'O';
+            }
         }
         else if (move == "C1") {
-            board[2][0] = 'O';
+            if (board[2][0] != ' ') {
+                clearScreen();
+                std::cout << "Invalid move. Cell already occupied. Please try again.";
+                --turn;
+                return;
+            } else {
+                board[2][0] = 'O';
+            }
         }
         else if (move == "C2") {
-            board[2][1] = 'O';
+            if (board[2][1] != ' ') {
+                clearScreen();
+                std::cout << "Invalid move. Cell already occupied. Please try again.";
+                --turn;
+                return;
+            } else {
+                board[2][1] = 'O';
+            }
         }
         else if (move == "C3") {
-            board[2][2] = 'O';
+            if (board[2][2] != ' ') {
+                clearScreen();
+                std::cout << "Invalid move. Cell already occupied. Please try again.";
+                --turn;
+                return;
+            } else {
+                board[2][2] = 'O';
+            }
         }
     }
 }
@@ -104,7 +232,6 @@ void playGame() {
         std::cin >> move;
         // Logic to update the board based on the player's move
         playerInput(board, move, i);
-        clearScreen();
     }
 }
 
