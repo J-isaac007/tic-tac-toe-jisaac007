@@ -21,7 +21,7 @@ void clearScreen() {
 }
 
 void playerInput(char board[3][3], std::string move, int &turn) {
-
+    // this is for the logic to update the board based on the player's move
     clearScreen();
     // parse the input and update the board accordingly
     if (move.length() != 2) {
@@ -67,7 +67,6 @@ void playGame() {
         std::cout << "Enter your move (e.g., A1, B2): ";
         std::string move;
         std::cin >> move;
-        // Logic to update the board based on the player's move
         playerInput(board, move, i);
     }
 }
